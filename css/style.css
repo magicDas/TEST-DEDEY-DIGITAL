@@ -41,6 +41,8 @@ a:focus{
   text-decoration: none;
 }
 
+
+
 .main{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +114,9 @@ a:focus{
   font-size: 35px;
   color: #FFD289;
 }
+.add i:hover {
+  background: #FF9A00;
+}
 .search .btn {
   text-transform: uppercase;
   color: #fff;
@@ -123,6 +128,9 @@ a:focus{
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: 1px;
+}
+.search .btn:hover {
+  background: #de8907;
 }
 .plase i, .calendar .zaezd i {
   font-size: 16px;
@@ -200,10 +208,6 @@ label {
   height: 16px;
   color: #ccc;
 }
-#ui-datepicker-div {
-  background: #fff;
-  padding: 20px;
-}
 
 a:hover,
 input:hover,
@@ -218,3 +222,35 @@ input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s eas
 input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
 input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+#ui-datepicker-div {
+   background: transparent; 
+}
+  .ui-datepicker-header, .ui-datepicker-calendar {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+  }
+button:focus-within,
+a:focus-within,
+form:focus-within {
+  box-shadow: 0px 0.2em 2.5em #c4c4c4;
+  transform: scale(1.025); 
+}  
+
+@media screen and (max-width: 400px) {
+  .main {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    padding: 20px 0;
+  }
+  .add {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}
