@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+*{
+  outline: none !important;
+  }
+
+ul,p,li,span,label{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans';
+  background: #ccc;
+}
+
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type="text"],
+input[type="date"],
+input[type='number'],
+input[type="number"]:hover,
+input[type="date"]:hover,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;    
+    border: none;
+}
+input[type="text"] {
+  color: #000;
+}
+
+a:hover,
+a:focus{
+  text-decoration: none;
+}
+
+.main{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1170px;
+  height: 100px;
+  background: #fff;  
+  margin: 300px auto;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.plase input[type="text"] {
+  color: #6B6B6B;
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  color: rgb(107, 107, 107);
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.2;
+  width: 185px;
+}
+
+.calendar, .current {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar {
+  width: 320px;
+}
+
+.current {
+  width: 240px;
+}
+.number {
+  width: 70px;
+}
+.number input {
+  width: 17px;
+  font-size: 16px;
+  padding: 2px 8px;
+  border: 1px solid #EBF4FA;
+  max-height: 20px;
+}
+.incdec {
+  display: flex;  
+  justify-content: space-between; 
+  align-items: center; 
+  width: 50px;
+}
+.number .arrows i {
+  margin: 0;
+  padding: 0;
+
+}
+.number .arrows {
+  width: 10px;
+  font-size: 16px;
+}
+.number label {
+  margin-bottom: -2px !important;
+  margin-top: 5px !important;
+}
+.add i {
+  font-size: 35px;
+  color: #FFD289;
+}
+.search .btn {
+  text-transform: uppercase;
+  color: #fff;
+  background: #FF9A00;
+  padding: 25px 60px;
+  border: none;
+  font-size: 16px;
+  font-family: "Proxima Nova";
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.plase i, .calendar .zaezd i {
+  font-size: 16px;
+  color: #FF9A00;
+}
+.calendar .vyezd i {
+  font-size: 16px;
+  color: #ccc;
+}
+.point {
+  height: 2px;
+  width: 2px;
+  background: #ccc;
+  margin-left: -40px;
+  margin-top: 20px;
+}
+
+.hash {
+  height: 30px;
+  width: 2px;
+  background: #ccc;
+  margin: 0 10px;
+}
+.fa-caret-up {
+  color:#FF9A00;
+}
+.fa-caret-down {
+  color: #8A929A;
+}
+.fa-caret-up:hover,
+.fa-caret-down:hover {
+  color:#FF9A00;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  color: rgb(35, 35, 35);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.calendar .date-end, 
+.calendar .date-begin {
+  position: relative;
+}
+.calendar .date-end input[type="text"], 
+.calendar .date-begin input[type="text"]{
+  position: relative;
+  width: 125px;
+  font-size: 18px;
+  font-family: "Fira Sans";
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+}
+.calendar .date-begin input[type="text"]{
+  padding-left: 20px;
+}
+
+.calendar .date-begin i {
+  position: absolute;
+  top:2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+}
+.calendar .date-end i {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  color: #ccc;
+}
+#ui-datepicker-div {
+  background: #fff;
+  padding: 20px;
+}
+
+a:hover,
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
